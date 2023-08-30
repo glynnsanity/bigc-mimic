@@ -75,6 +75,7 @@ async function* makeRangeIterator(htmlArray, config) {
                 completion = await openai.createChatCompletion({
                     model: "gpt-4",
                     messages: getMessage(html),
+                    temperature: 0.1,
                 });
                 break;
             } catch (error) {
@@ -97,13 +98,19 @@ async function* makeRangeIterator(htmlArray, config) {
                 const contentWithJSONArray = JSON.parse(/\[[\s\S]*\]/.exec(content)[0]);
                 const filteredArray = contentWithJSONArray.filter(function(productObject){
                     productObject.price = productObject.price.replace('$','');
+                    productObject.price = productObject.price.replace(/- .*/, '').trim()
+
+                    console.log('not found ', !/[Nn][Oo].*([Ff][Oo][Uu][Nn][Dd]|[Hh][Ee][Rr][Ee])/.test(content));
+                    if (!/[Nn][Oo].*([Ff][Oo][Uu][Nn][Dd]|[Hh][Ee][Rr][Ee])|[Nn][Uu][Ll][Ll]/.test(content)) {
+                        console.log('what ', content)
+                    }
                     
                     return (
                         !productObject.price.includes('$') &&
                         typeof +productObject.price === 'number' &&
                         productObject.price !== '' &&
                         parseFloat(productObject.price).toFixed(2) !== 0 &&
-                        content.indexOf('Nothing Found') < 0
+                        !/[Nn][Oo].*([Ff][Oo][Uu][Nn][Dd]|[Hh][Ee][Rr][Ee])/.test(content)
                     ) 
                 });
 
