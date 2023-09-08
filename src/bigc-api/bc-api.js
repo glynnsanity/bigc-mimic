@@ -137,7 +137,7 @@ export async function getCatIDFromCategories(data) {
         let categoriesArr = json.data;
         let getExistingCategoryID = (categoriesArr, name) => {
             let matchedCategories = categoriesArr.filter(function(category){
-                return category.name === name;
+                return (category.parent_id === 0 && category.name === name);
             });
             
             if (matchedCategories.length === 1) {

@@ -101,7 +101,7 @@ async function* makeRangeIterator(htmlArray, config) {
                     productObject.price = productObject.price.replace(/- .*/, '').trim()
 
                     console.log('not found ', !/[Nn][Oo].*([Ff][Oo][Uu][Nn][Dd]|[Hh][Ee][Rr][Ee])/.test(content));
-                    if (!/[Nn][Oo].*([Ff][Oo][Uu][Nn][Dd]|[Hh][Ee][Rr][Ee])|[Nn][Uu][Ll][Ll]/.test(content)) {
+                    if (!/[Nn][Oo].*([Ff][Oo][Uu][Nn][Dd]|[Hh][Ee][Rr][Ee])|[Nn][Uu][Ll][Ll]|[Aa]vailable/.test(content)) {
                         console.log('what ', content)
                     }
                     
