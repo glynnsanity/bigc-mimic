@@ -1,5 +1,5 @@
 import { Configuration, OpenAIApi } from 'openai';
-import { createCategoryAndProductInBigCommerce } from './bigc-api/bc-api.js';
+import { createCategoryInBigCommerce, createProductInBigCommerce } from './bigc-api/bc-api.js';
 import puppeteer from 'puppeteer';
 import fetch from 'node-fetch';
 
@@ -136,16 +136,30 @@ async function* makeRangeIterator(htmlArray, config) {
 async function* bcApiIterator(dataArray, config) {
     let count = 0;
 
+
+
+    //Todo creat category once
+    const categoryId = await createCategoryInBigCommerce({
+        storeHash: config.storeHash,
+        bcAuthToken: config.bcAuthToken,
+        categoryName: config.categoryName,
+    });
+
+    //now loop through the product
+
     for (let i = 0; i <= config.count - 1; i += 1) {
         const gptResponse = dataArray[i];
-        await createCategoryAndProductInBigCommerce({
+
+        await createProductInBigCommerce({
             storeHash: config.storeHash,
             bcAuthToken: config.bcAuthToken,
             categoryName: config.categoryName,
             productName: gptResponse.name,
             productPrice: gptResponse.price,
             productImage: gptResponse.image
-        });
+        }, categoryId);
+
+
         count++;
         yield `${count} API call(s) have been made`;
     };
