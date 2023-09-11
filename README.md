@@ -30,13 +30,26 @@ Run `bigc-mimic catscan` and follow prompts to execute a scan of a category page
 
 ### Components of the CLI
 - #### Base CLI NPM Packages
-    - ##### Commander
+    - ##### Commander 
+    https://www.npmjs.com/package/commander
     - ##### Inquirer
+    https://www.npmjs.com/package//inquirer
     - ##### Node FileSystem Module
+    https://nodejs.org/api/fs.html#filehandlereadfileoptions
+    https://nodejs.org/api/fs.html#filehandlewritefiledata-options
 - #### Puppeteer
+https://www.npmjs.com/package/puppeteer
+
 - #### ChatGPT
+https://platform.openai.com/docs/guides/gpt/chat-completions-api
+
 - #### BigCommerce API
+https://developer.bigcommerce.com/docs/rest-catalog
+
 ### The Problem (Definition & Impact)
+Loading data into a new BigCommerce storefront is cumbersome and time consuming. Even adding a single product with minimal data can take over roughly a minute and a half to configure. Multiply this by ~50 products when trying to create a real-life scenario storefront and we're looking at well over an hour of manual product catalog creation.
+
+When specificially talking about BigCommerce Solutions Engineers, it can be particularly effective to have a storefront already customized to a merchant prospect's needed configuration in order to demonstrate the value of the platform for their use case. Currently accomplishing this is very difficult and as a result creates a large barrier for Solutions Engineers to implement.
+
 ### The Solution (Hypothesis & Approach)
 
-### 
