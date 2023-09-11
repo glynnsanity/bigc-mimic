@@ -1,4 +1,4 @@
-***INSTALLATION
+### INSTALLATION
 
 Pull down the repo
 
