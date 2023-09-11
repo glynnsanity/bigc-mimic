@@ -29,13 +29,13 @@ Run `bigc-mimic catscan` and follow prompts to execute a scan of a category page
 *Note*: There are console logs that are currently still in there for debugging - these are messy but are helpful in that they will output the initial response from ChatGPT and the filtered JSON that's being recorded and sent through the BigCommerce API
 
 ### Components of the CLI
-#### Base CLI NPM Packages
-##### Commander
-##### Inquirer
-##### Node FileSystem Module
-#### Puppeteer
-#### ChatGPT
-#### BigCommerce API
+- #### Base CLI NPM Packages
+    - ##### Commander
+    - ##### Inquirer
+    - ##### Node FileSystem Module
+- #### Puppeteer
+- #### ChatGPT
+- #### BigCommerce API
 ### The Problem (Definition & Impact)
 ### The Solution (Hypothesis & Approach)
 
