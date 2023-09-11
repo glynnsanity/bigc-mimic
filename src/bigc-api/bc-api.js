@@ -15,8 +15,9 @@ import fetch from 'node-fetch';
  *   - price: The product price.
  *
  */
-export async function createCategoryAndProductInBigCommerce(data){
+export async function createCategoryInBigCommerce(data){
     try {
+        //TODO check if cat, if not make a new one.
         const createCategoryEndpoint = `https://api.bigcommerce.com/stores/${data.storeHash}/v3/catalog/categories`;
         let options = {
             method: 'post',
@@ -25,13 +26,14 @@ export async function createCategoryAndProductInBigCommerce(data){
         };
         const result = await fetch(createCategoryEndpoint, options);
         const json = await result.json();
-
         if (json.status === 409) {
+            //TODO think about how to handle
             await getCatIDFromCategories(data);
+            return data.id
         } else {
-            let categoryID = json.data.id;
-            await createProductInBigCommerce(data, categoryID);
-        }  
+            //Todo move this out.  No need to loop through cat creations
+            return json.data.id
+        }
     } catch(e) {
         console.log('Errror in "createCategoryAndProductInBigCommerce": ', e)
     }
