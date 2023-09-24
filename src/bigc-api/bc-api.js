@@ -78,6 +78,8 @@ export async function createProductInBigCommerce(data, id){
         
         const result = await fetch(createProductEndpoint, options)
         const json = await result.json();
+
+        console.log('json ', json);
         
         if (json.status !== 409) {
             await createProductChannelAssignment(data, json.data.id);
@@ -149,7 +151,7 @@ export async function getCatIDFromCategories(data) {
             }
         }
         let categoryID = getExistingCategoryID(categoriesArr, data.categoryName);
-        await createProductInBigCommerce(data, categoryID);
+        return categoryID
     } catch(e){
         console.log('Error in "getCatIDFromCategories": ', e);
     }

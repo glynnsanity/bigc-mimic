@@ -108,7 +108,7 @@ async function* makeRangeIterator(htmlArray, config) {
                         !/[Nn][Oo].*([Ff][Oo][Uu][Nn][Dd]|[Hh][Ee][Rr][Ee])/.test(content)
                     ) 
                 });
-
+                
                 if (filteredArray.length > 0) {
                     count = count - filteredArray.length;
                     if (count <= 0) {
@@ -226,9 +226,11 @@ export function chatGPTScrapeAndAnalyze(config){
         console.log('Sending product data to BigCommerce...')
         const bcIt = bcApiIterator(flattenedArray, config);
         let bcResult = await bcIt.next();
+        console.log(`\u001B[32m ${bcResult.value}`);
 
         while (!bcResult.done) {
             bcResult = await bcIt.next();
+            console.log(`\u001B[32m ${bcResult.value}`);
         }
     
         await browser.close();
