@@ -99,11 +99,6 @@ async function* makeRangeIterator(htmlArray, config) {
                 const filteredArray = contentWithJSONArray.filter(function(productObject){
                     productObject.price = productObject.price.replace('$','');
                     productObject.price = productObject.price.replace(/- .*/, '').trim()
-
-                    console.log('not found ', !/[Nn][Oo].*([Ff][Oo][Uu][Nn][Dd]|[Hh][Ee][Rr][Ee])/.test(content));
-                    if (!/[Nn][Oo].*([Ff][Oo][Uu][Nn][Dd]|[Hh][Ee][Rr][Ee])|[Nn][Uu][Ll][Ll]|[Aa]vailable/.test(content)) {
-                        console.log('what ', content)
-                    }
                     
                     return (
                         !productObject.price.includes('$') &&
@@ -114,7 +109,6 @@ async function* makeRangeIterator(htmlArray, config) {
                     ) 
                 });
 
-                console.log('filtered array ', filteredArray);
                 if (filteredArray.length > 0) {
                     count = count - filteredArray.length;
                     if (count <= 0) {
@@ -232,11 +226,9 @@ export function chatGPTScrapeAndAnalyze(config){
         console.log('Sending product data to BigCommerce...')
         const bcIt = bcApiIterator(flattenedArray, config);
         let bcResult = await bcIt.next();
-        console.log(`\u001B[32m ${bcResult.value}`);
 
         while (!bcResult.done) {
             bcResult = await bcIt.next();
-            console.log(`\u001B[32m ${bcResult.value}`);
         }
     
         await browser.close();
