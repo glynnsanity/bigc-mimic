@@ -91,9 +91,10 @@
 
 ### Built With
 
-* [![Next.js]][Next-url]
-* [![React][React.js]][React-url]
+* [![BigCommerce]](https://developer.bigcommerce.com/)
 * [![Puppeteer]](https://pptr.dev/)
+* [![ChatGPT]](https://platform.openai.com/docs/guides/gpt)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -237,4 +238,7 @@ Project Link: [https://github.com/glynnsanity/bigc-mimic](https://github.com/gly
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+
 [Puppeteer]: https://img.shields.io/badge/Puppeteer-40B5A4?logo=puppeteer&logoColor=fff&style=for-the-badge
+[BigCommerce]: https://img.shields.io/badge/BigCommerce-121118?logo=bigcommerce&logoColor=fff&style=for-the-badge
+[ChatGPT]: ./images/chatgpt.svg
