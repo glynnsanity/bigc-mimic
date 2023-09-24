@@ -241,4 +241,4 @@ Project Link: [https://github.com/glynnsanity/bigc-mimic](https://github.com/gly
 
 [Puppeteer]: https://img.shields.io/badge/Puppeteer-40B5A4?logo=puppeteer&logoColor=fff&style=for-the-badge
 [BigCommerce]: https://img.shields.io/badge/BigCommerce-121118?logo=bigcommerce&logoColor=fff&style=for-the-badge
-[ChatGPT]: ./images/chatgpt.svg
+[ChatGPT]: images/chatgpt.svg
