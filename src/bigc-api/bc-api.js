@@ -35,7 +35,7 @@ export async function createCategoryInBigCommerce(data){
             return json.data.id
         }
     } catch(e) {
-        console.log('Errror in "createCategoryAndProductInBigCommerce": ', e)
+        console.log('Errror in "createCategoryInBigCommerce": ', e)
     }
 }
 
@@ -78,8 +78,6 @@ export async function createProductInBigCommerce(data, id){
         
         const result = await fetch(createProductEndpoint, options)
         const json = await result.json();
-
-        console.log('json ', json);
         
         if (json.status !== 409) {
             await createProductChannelAssignment(data, json.data.id);
