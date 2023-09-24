@@ -93,7 +93,7 @@
 
 * [![Next.js]][Next-url]
 * [![React][React.js]][React-url]
-* [![Puppeteer Badge]](https://img.shields.io/badge/Puppeteer-40B5A4?logo=puppeteer&logoColor=fff&style=flat)
+![Puppeteer Badge](https://img.shields.io/badge/Puppeteer-40B5A4?logo=puppeteer&logoColor=fff&style=flat)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
