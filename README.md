@@ -94,7 +94,7 @@
 * [![BigCommerce]](https://developer.bigcommerce.com/)
 * [![Puppeteer]](https://pptr.dev/)
 * [![ChatGPT]](https://platform.openai.com/docs/guides/gpt)
-* [![NPM Commander]](https://www.npmjs.com/package/commander)
+* [![NPM Commander] - Commander](https://www.npmjs.com/package/commander)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
