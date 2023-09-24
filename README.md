@@ -94,7 +94,7 @@
 * [![BigCommerce]](https://developer.bigcommerce.com/)
 * [![Puppeteer]](https://pptr.dev/)
 * [![ChatGPT]](https://platform.openai.com/docs/guides/gpt)
-* [![NPM Commander] - Commander](https://www.npmjs.com/package/commander)
+* [![NPM Commander]](https://nba.com)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -243,4 +243,4 @@ Project Link: [https://github.com/glynnsanity/bigc-mimic](https://github.com/gly
 [Puppeteer]: https://img.shields.io/badge/Puppeteer-40B5A4?logo=puppeteer&logoColor=fff&style=for-the-badge
 [BigCommerce]: https://img.shields.io/badge/BigCommerce-121118?logo=bigcommerce&logoColor=fff&style=for-the-badge
 [ChatGPT]: https://img.shields.io/badge/chatGPT-74aa9c?style=for-the-badge&logo=openai&logoColor=white
-[NPM Commander]: https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff&style=for-the-badge
+[NPM Commander]: https://img.shields.io/npm/dm/commander.svg?style=for-the-badge
