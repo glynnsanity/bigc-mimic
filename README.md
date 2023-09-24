@@ -34,10 +34,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-<h3 align="center">project_title</h3>
+<h3 align="center">BigC Mimic CLI</h3>
 
   <p align="center">
-    project_description
+    BigC Mimic CLI is a command line interface using ChatGPT to intelligently retrieve data from eCommerce sites and transfer data to BigCommerce storefronts. Currently it's primary use is for the Solutions Engineering team at BigCommerce to ease POC development.
     <br />
     <a href="https://github.com/glynnsanity/bigc-mimic"><strong>Explore the docs »</strong></a>
     <br />
@@ -85,7 +85,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `glynnsanity`, `bigc-mimic`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `twitter_handle`, `linkedin_username`, `email_client`, `email`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
