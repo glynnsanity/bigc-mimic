@@ -108,7 +108,7 @@ async function* makeRangeIterator(htmlArray, config) {
                         !/[Nn][Oo].*([Ff][Oo][Uu][Nn][Dd]|[Hh][Ee][Rr][Ee])/.test(content)
                     ) 
                 });
-                
+
                 if (filteredArray.length > 0) {
                     count = count - filteredArray.length;
                     if (count <= 0) {
@@ -130,8 +130,6 @@ async function* makeRangeIterator(htmlArray, config) {
 async function* bcApiIterator(dataArray, config) {
     let count = 0;
 
-
-
     //Todo creat category once
     const categoryId = await createCategoryInBigCommerce({
         storeHash: config.storeHash,
@@ -140,7 +138,6 @@ async function* bcApiIterator(dataArray, config) {
     });
 
     //now loop through the product
-
     for (let i = 0; i <= config.count - 1; i += 1) {
         const gptResponse = dataArray[i];
 
@@ -152,7 +149,6 @@ async function* bcApiIterator(dataArray, config) {
             productPrice: gptResponse.price,
             productImage: gptResponse.image
         }, categoryId);
-
 
         count++;
         yield `${count} API call(s) have been made`;
