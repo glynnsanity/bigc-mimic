@@ -83,7 +83,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://www.nike.com/w/mens-basketball-shoes-3glsmznik1zy7ok)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -225,7 +225,7 @@ Project Link: [https://github.com/glynnsanity/bigc-mimic](https://github.com/gly
 [license-url]: https://github.com/glynnsanity/bigc-mimic/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/glynnjordan
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: images/screenshot2.png
 
 
 [Puppeteer]: https://img.shields.io/badge/Puppeteer-40B5A4?logo=puppeteer&logoColor=fff&style=for-the-badge
