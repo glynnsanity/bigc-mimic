@@ -120,6 +120,8 @@ Developed on Node v18.15.0. Need to further test compatibilities with node versi
 3. Clone the repo and cd into the bigc-mimic folder
    ```sh
    git clone https://github.com/glynnsanity/bigc-mimic.git
+
+   cd bigc-mimic
    ```
 4. Install packages
    ```sh
